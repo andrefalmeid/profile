@@ -9,7 +9,7 @@ import {
   Moon, Sun, Sparkles
 } from "lucide-react";
 
-// DADOS
+
 const profile = {
   name: "André Filipe Pereira de Almeida",
   role: "Desenvolvedor Front-End Pleno",
@@ -21,7 +21,8 @@ const profile = {
     phone: "(38) 99878-9364",
     github: "https://github.com/andrefalmeid"
   },
-  about: "Desenvolvedor Front-End com forte evolução técnica nos últimos 2 anos. Iniciei minha trajetória no projeto 'Vallora' (comércio exterior) como auxiliar, absorvendo arquitetura e padrões. Em 2025, assumi integralmente a responsabilidade pelo front-end, focando em refatoração de código legado, melhoria de performance e implementação de novas features para clientes críticos como Johnson & Johnson LATAM.",
+  about: "Desenvolvedor Front-End especializado em Next.js, React e TypeScript. Minha trajetória é marcada pela evolução técnica dentro de um produto complexo de comércio exterior (SaaS): iniciei no projeto desde sua concepção e, através de entregas consistentes, fui contratado pelo cliente final (Omega Solutions) para assumir integralmente a responsabilidade pelo front-end. Tenho experiência em todo o ciclo de vida de desenvolvimento, desde a construção das bases do sistema até a otimização de performance e refatoração estratégica para escalabilidade. Focado em entregar interfaces de alto impacto para clientes críticos (como Johnson & Johnson LATAM), combino domínio técnico com visão de negócio. Profissional motivado por excelência técnica e aberto a novas conexões e oportunidades no mercado.",
+
   skills: [
     "Next.js", "React.js", "TypeScript", "Tailwind CSS",
     "Refatoração / Clean Code",
@@ -29,25 +30,59 @@ const profile = {
     "Git / GitHub", "Scrum / TDD",
     "Material-UI", "Consumo de APIs REST"
   ],
-  // AJUSTADO
   softSkills: [
     "Comunicação Eficaz", "Resolução de Problemas",
     "Atenção aos Detalhes", "Autogestão",
     "Trabalho em Equipe", "Proatividade",
     "Adaptabilidade"
   ],
+
   experience: [
     {
       company: "Omega Solutions",
       role: "Desenvolvedor Front-End Pleno (Responsável Técnico)",
-      period: "Set 2025 - Jan 2026",
-      description: "Assumi a liderança técnica do front-end, atuando de forma autônoma na evolução do produto. Meu foco principal foi a refatoração de módulos legados para garantir escalabilidade e a implementação de novas funcionalidades solicitadas. Mantive a estabilidade do sistema e a qualidade do código até a reestruturação da equipe por mudanças de demanda.",
+      period: "Set 2025 – Jan 2026",
+      achievements: [
+        {
+          title: "Liderança e Evolução do Front-End",
+          desc: "Como ponto focal da tecnologia no projeto Vallora, fui responsável por manter e evoluir a arquitetura do sistema. Realizei melhorias significativas em códigos desenvolvidos nas fases iniciais do projeto, elevando o padrão de qualidade e performance."
+        },
+        {
+          title: "Refatoração e Melhoria Contínua",
+          desc: "Identifiquei gargalos e reescrevi módulos críticos do sistema para garantir maior manutenibilidade e escalabilidade, preparando a aplicação para o aumento de demanda dos clientes."
+        },
+        {
+          title: "Features de Alto Valor",
+          desc: "Desenvolvimento autônomo de dashboards analíticos complexos e relatórios interativos, utilizando bibliotecas como ApexCharts, atendendo diretamente às necessidades de visualização de dados de grandes multinacionais."
+        },
+        {
+          title: "Gestão de Entregas",
+          desc: "Responsável integral pelo ciclo de desenvolvimento do front-end, desde a análise da tarefa até o deploy e validação em produção, garantindo estabilidade e cumprimento de prazos sem supervisão técnica direta."
+        }
+      ]
     },
     {
-      company: "Cube App's (Alocado no Projeto Vallora)",
+      company: "Cube App's Consultoria",
       role: "Desenvolvedor Front-End Júnior",
-      period: "Nov 2023 - Set 2025",
-      description: "Atuação em par com Desenvolvedor Sênior na construção da base do sistema Vallora. Participei da implementação da arquitetura definida em Next.js e TypeScript, desenvolvendo interfaces e dashboards. Foi um período de intenso aprendizado técnico e entrega de features seguindo padrões rigorosos estabelecidos pela liderança.",
+      period: "Nov 2023 – Set 2025",
+      achievements: [
+        {
+          title: "Desenvolvimento do Zero",
+          desc: "Atuação desde o início do projeto Vallora, construindo as interfaces fundamentais do sistema utilizando Next.js e Tailwind CSS, transformando requisitos de negócio em telas funcionais."
+        },
+        {
+          title: "Integração de APIs",
+          desc: "Consumo de APIs REST, implementando tratamento robusto de erros, estados de carregamento (loading skeletons) e feedback visual para o usuário."
+        },
+        {
+          title: "Evolução Acelerada",
+          desc: "Iniciei dando suporte em tarefas menores e, através de aprendizado contínuo e pair programming com desenvolvedores seniores, assumi progressivamente features complexas até me tornar totalmente independente na stack."
+        },
+        {
+          title: "Qualidade de Código",
+          desc: "Aplicação de boas práticas de componentização no React e tipagem rigorosa com TypeScript para evitar bugs em produção."
+        }
+      ]
     }
   ],
   certifications: [
@@ -117,7 +152,8 @@ export default function Portfolio() {
         }}>
       </div>
 
-      <div className="flex-1 min-h-0 w-full max-w-400 mx-auto p-4 md:p-8 relative z-10">
+      <div className="flex-1 min-h-0 w-full max-w-350 mx-auto p-4 md:p-8 relative z-10">
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 h-full">
 
           {/* COLUNA ESQUERDA (PERFIL) */}
@@ -198,7 +234,7 @@ export default function Portfolio() {
 
           </motion.aside>
 
-          {/* COLUNA DIREITA */}
+          {/* COLUNA DIREITA (CONTEÚDO) */}
           <main className="lg:col-span-8 xl:col-span-8 space-y-6 lg:space-y-8 h-auto lg:h-full lg:overflow-y-auto lg:pr-2 custom-scrollbar lg:pb-20 pb-12">
 
             <Section delay={0.1} title="Sobre Mim">
@@ -220,7 +256,7 @@ export default function Portfolio() {
                     </div>
 
                     <div className="bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/5 rounded-2xl p-5 md:p-6 hover:border-indigo-300 dark:hover:border-indigo-500/30 transition-colors shadow-sm dark:shadow-none">
-                      <div className="flex flex-col xl:flex-row xl:items-start justify-between mb-4 gap-2 md:gap-4">
+                      <div className="flex flex-col xl:flex-row xl:items-start justify-between mb-6 gap-2 md:gap-4">
                         <div>
                           <h3 className="text-lg md:text-xl font-bold text-slate-900 dark:text-white group-hover:text-indigo-700 dark:group-hover:text-indigo-400 transition-colors">
                             {job.role}
@@ -233,9 +269,18 @@ export default function Portfolio() {
                         </span>
                       </div>
 
-                      <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-sm md:text-base">
-                        {job.description}
-                      </p>
+                      {/* RENDERIZAÇÃO DOS TÓPICOS (ACHIEVEMENTS) */}
+                      <ul className="space-y-4">
+                        {job.achievements.map((item, i) => (
+                          <li key={i} className="text-slate-600 dark:text-slate-300 text-sm md:text-base leading-relaxed">
+                            <strong className="block text-slate-800 dark:text-white mb-1 font-semibold">
+                              {item.title}
+                            </strong>
+                            {item.desc}
+                          </li>
+                        ))}
+                      </ul>
+
                     </div>
                   </div>
                 ))}
@@ -308,6 +353,7 @@ export default function Portfolio() {
   );
 }
 
+// COMPONENTES REUTILIZÁVEIS
 function Section({ children, delay, title, icon }: any) {
   return (
     <motion.section
