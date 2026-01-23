@@ -51,6 +51,7 @@ const profile = {
     ]
   },
 
+
   skills: [
     "Next.js", "React.js", "TypeScript", "Tailwind CSS",
     "Refatoração / Clean Code",
