@@ -33,21 +33,21 @@ const profile = {
       figma: "https://www.figma.com/design/q3iosN6XtWrdKL58UfOeW6/Vallora?node-id=0-1&m=dev&t=CafbDenxSt0bHCD0-1"
     },
     gallery: [
-      "/projects/vallora/print-demo (1).png",
-      "/projects/vallora/print-demo (2).png",
+      "/projects/vallora/print-demo(1).png",
+      "/projects/vallora/print-demo(2).png",
       "/projects/vallora/video-demo.mp4",
-      "/projects/vallora/print-demo (3).png",
-      "/projects/vallora/print-demo (4).png",
-      "/projects/vallora/print-demo (5).png",
-      "/projects/vallora/print-demo (6).png",
-      "/projects/vallora/print-demo (7).png",
-      "/projects/vallora/print-demo (8).png",
-      "/projects/vallora/print-demo (9).png",
-      "/projects/vallora/print-demo (10).png",
-      "/projects/vallora/print-demo (11).png",
-      "/projects/vallora/print-demo (12).png",
-      "/projects/vallora/print-demo (13).png",
-      "/projects/vallora/print-demo (14).png"
+      "/projects/vallora/print-demo(3).png",
+      "/projects/vallora/print-demo(4).png",
+      "/projects/vallora/print-demo(5).png",
+      "/projects/vallora/print-demo(6).png",
+      "/projects/vallora/print-demo(7).png",
+      "/projects/vallora/print-demo(8).png",
+      "/projects/vallora/print-demo(9).png",
+      "/projects/vallora/print-demo(10).png",
+      "/projects/vallora/print-demo(11).png",
+      "/projects/vallora/print-demo(12).png",
+      "/projects/vallora/print-demo(13).png",
+      "/projects/vallora/print-demo(14).png"
     ]
   },
 
